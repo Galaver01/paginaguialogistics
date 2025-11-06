@@ -32,38 +32,37 @@
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
     </style>
 </head>
-<body class="bg-guia-light text-guia-text font-sans">
+<body class="bg-guia-green text-guia-light font-sans">
 
-    <nav class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="bg-guia-green shadow-md sticky top-0 z-50 border-b border-guia-gold/20">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
             
             <a href="#inicio">
                 <img src="guia verde.png" alt="GUIA LOGISTICS Logo" class="h-12">
             </a>
 
-            <div class="hidden md:flex space-x-8 text-[17px] text-guia-text items-center">
+            <div class="hidden md:flex space-x-8 text-[17px] text-guia-light items-center">
                 <a href="#inicio" class="hover:text-guia-gold transition-colors">Inicio</a>
                 <a href="#servicios" class="hover:text-guia-gold transition-colors">Servicios</a>
                 <a href="#nosotros" class="hover:text-guia-gold transition-colors">Nosotros</a>
                 <a href="#contacto" class="bg-guia-gold text-white px-5 py-2 rounded-full hover:bg-[#b29046] transition-colors font-medium shadow-md hover:shadow-lg">Contacto</a>
             </div>
 
-            <button id="mobile-menu-btn" class="md:hidden p-2 text-guia-green hover:text-guia-gold transition-colors">
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-guia-light hover:text-guia-gold transition-colors">
                 <i class="fa-solid fa-bars text-2xl"></i>
             </button>
         </div>
 
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-6 pb-4 space-y-2">
-            <a href="#inicio" class="block py-2 text-guia-text hover:text-guia-gold">Inicio</a>
-            <a href="#servicios" class="block py-2 text-guia-text hover:text-guia-gold">Servicios</a>
-            <a href="#nosotros" class="block py-2 text-guia-text hover:text-guia-gold">Nosotros</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-guia-green border-t border-guia-gold/20 px-6 pb-4 space-y-2">
+            <a href="#inicio" class="block py-2 text-guia-light hover:text-guia-gold">Inicio</a>
+            <a href="#servicios" class="block py-2 text-guia-light hover:text-guia-gold">Servicios</a>
+            <a href="#nosotros" class="block py-2 text-guia-light hover:text-guia-gold">Nosotros</a>
             <a href="#contacto" class="block bg-guia-gold text-white px-4 py-2 rounded-full text-center hover:bg-[#b29046]">Contacto</a>
         </div>
     </nav>
 
-    <section id="inicio" class="relative text-center text-white py-32 md:py-48" style="background-image: url('https://images.unsplash.com/photo-157798505134A-460d6c13e7d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center;">
+    <section id="inicio" class="relative text-center text-white py-32 md:py-48" style="background-image: url('https://images.unsplash.com/photo-157798505134A-460d6c13e7d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto-format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center;">
         <div class="absolute inset-0 bg-guia-green bg-opacity-80"></div>
-        
         <div class="container mx-auto px-6 relative z-10">
             <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">
                 <span class="text-white">Experiencia Sólida,</span> <span class="text-guia-gold">Confianza Garantizada</span>
@@ -77,64 +76,64 @@
         </div>
     </section>
 
-    <section id="servicios" class="py-20 bg-guia-light">
+    <section id="servicios" class="py-20">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12 text-guia-green">Explore la Calidad que Nos Respalda</h2>
+            <h2 class="text-3xl font-bold text-center mb-12 text-guia-gold">Explore la Calidad que Nos Respalda</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <div class="h-full bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-guia-gold/10 transition-all text-center">
+                <div class="h-full p-8 rounded-lg border border-guia-gold/30 hover:border-guia-gold/60 hover:shadow-lg hover:shadow-guia-gold/10 transition-all text-center">
                     <i class="fa-solid fa-truck-fast text-5xl text-guia-gold mb-4"></i>
-                    <h3 class="text-2xl font-semibold mb-3 text-guia-green">Transporte Terrestre</h3>
-                    <p class="text-guia-text">
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Transporte Terrestre</h3>
+                    <p class="text-guia-light">
                         Garantizamos el transporte de su mercancía mediante sistemas inteligentes, control operativo y personal altamente capacitado.
                     </p>
                 </div>
 
-                <div class="h-full bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-guia-gold/10 transition-all text-center">
+                <div class="h-full p-8 rounded-lg border border-guia-gold/30 hover:border-guia-gold/60 hover:shadow-lg hover:shadow-guia-gold/10 transition-all text-center">
                     <i class="fa-solid fa-ship text-5xl text-guia-gold mb-4"></i>
-                    <h3 class="text-2xl font-semibold mb-3 text-guia-green">Flete Marítimo</h3>
-                    <p class="text-guia-text">
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Flete Marítimo</h3>
+                    <p class="text-guia-light">
                         Servicio marítimo FCL y LCL con planificación experta, documentación aduanal y visibilidad total del embarque.
                     </p>
                 </div>
 
-                <div class="h-full bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-guia-gold/10 transition-all text-center">
+                <div class="h-full p-8 rounded-lg border border-guia-gold/30 hover:border-guia-gold/60 hover:shadow-lg hover:shadow-guia-gold/10 transition-all text-center">
                     <i class="fa-solid fa-plane-departure text-5xl text-guia-gold mb-4"></i>
-                    <h3 class="text-2xl font-semibold mb-3 text-guia-green">Flete Aéreo</h3>
-                    <p class="text-guia-text">
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Flete Aéreo</h3>
+                    <p class="text-guia-light">
                         Trazabilidad inteligente, coordinación digital y cumplimiento normativo. Velocidad, precisión y control total.
                     </p>
                 </div>
 
-                <div class="h-full bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-guia-gold/10 transition-all text-center">
+                <div class="h-full p-8 rounded-lg border border-guia-gold/30 hover:border-guia-gold/60 hover:shadow-lg hover:shadow-guia-gold/10 transition-all text-center">
                     <i class="fa-solid fa-file-signature text-5xl text-guia-gold mb-4"></i>
-                    <h3 class="text-2xl font-semibold mb-3 text-guia-green">Agencia Aduanal</h3>
-                    <p class="text-guia-text">
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Agencia Aduanal</h3>
+                    <p class="text-guia-light">
                         Gestionamos sus operaciones con experiencia, precisión y cumplimiento absoluto, garantizando procesos seguros.
                     </p>
                 </div>
 
-                <div class="h-full bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-guia-gold/10 transition-all text-center">
+                <div class="h-full p-8 rounded-lg border border-guia-gold/30 hover:border-guia-gold/60 hover:shadow-lg hover:shadow-guia-gold/10 transition-all text-center">
                     <i class="fa-solid fa-warehouse text-5xl text-guia-gold mb-4"></i>
-                    <h3 class="text-2xl font-semibold mb-3 text-guia-green">Almacén</h3>
-                    <p class="text-guia-text">
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Almacén</h3>
+                    <p class="text-guia-light">
                         Servicios de almacén para importación y exportación, con espacios seguros y manejo especializado.
                     </p>
                 </div>
 
-                <div class="h-full bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-guia-gold/10 transition-all text-center">
+                <div class="h-full p-8 rounded-lg border border-guia-gold/30 hover:border-guia-gold/60 hover:shadow-lg hover:shadow-guia-gold/10 transition-all text-center">
                     <i class="fa-solid fa-shield-halved text-5xl text-guia-gold mb-4"></i>
-                    <h3 class="text-2xl font-semibold mb-3 text-guia-green">Custodia Especializada</h3>
-                    <p class="text-guia-text">
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Custodia Especializada</h3>
+                    <p class="text-guia-light">
                         Con equipos certificados y supervisión continua, garantizamos la protección estratégica de su carga en cada kilómetro.
                     </p>
                 </div>
                 
-                <div class="md:col-span-2 lg:col-span-3 bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-guia-gold/10 transition-all text-center">
+                <div class="md:col-span-2 lg:col-span-3 p-8 rounded-lg border border-guia-gold/30 hover:border-guia-gold/60 hover:shadow-lg hover:shadow-guia-gold/10 transition-all text-center">
                     <i class="fa-solid fa-lock text-5xl text-guia-gold mb-4"></i>
-                    <h3 class="text-2xl font-semibold mb-3 text-guia-green">Seguros y Sellos</h3>
-                    <p class="text-guia-text max-w-2xl mx-auto">
+                    <h3 class="text-2xl font-semibold mb-3 text-white">Seguros y Sellos</h3>
+                    <p class="text-guia-light max-w-2xl mx-auto">
                         Coberturas especializadas para mercancía y contenedores, respaldadas por aseguradoras líderes. Sellos con identificación única y trazabilidad digital para máxima seguridad.
                     </p>
                 </div>
@@ -142,18 +141,18 @@
         </div>
     </section>
 
-    <section id="nosotros" class="py-20 bg-white">
+    <section id="nosotros" class="py-20">
         <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
             <div>
                 <img src="guia3.jpeg" alt="Equipo GUIA LOGISTICS" class="rounded-lg shadow-xl hover:scale-105 transition-transform">
             </div>
             <div>
-                <h2 class="text-3xl font-bold mb-4 text-guia-green">Sobre Nosotros</h2>
-                <p class="mb-6 text-guia-text text-lg">
+                <h2 class="text-3xl font-bold mb-4 text-guia-gold">Sobre Nosotros</h2>
+                <p class="mb-6 text-guia-light text-lg">
                     Somos tu socio estratégico en cada movimiento de tu cadena de suministro. Con más de una década de experiencia, impulsamos el crecimiento de nuestros clientes.
                 </p>
-                <h3 class="text-xl font-semibold mb-4 text-guia-green">Lo que nos distingue:</h3>
-                <ul class="space-y-3 text-guia-text">
+                <h3 class="text-xl font-semibold mb-4 text-white">Lo que nos distingue:</h3>
+                <ul class="space-y-3 text-guia-light">
                     <li><i class="fa-solid fa-circle-check text-guia-gold mr-2"></i> Cumplimiento y Puntualidad</li>
                     <li><i class="fa-solid fa-circle-check text-guia-gold mr-2"></i> Tecnología de Monitoreo Avanzado</li>
                     <li><i class="fa-solid fa-circle-check text-guia-gold mr-2"></i> Atención Profesional 24/7</li>
@@ -164,39 +163,40 @@
         </div>
     </section>
 
-    <section id="objetivos" class="py-20 bg-guia-light text-center">
+    <section id="objetivos" class="py-20 text-center">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 text-guia-green">Nuestros Objetivos</h2>
+            <h2 class="text-3xl font-bold mb-12 text-guia-gold">Nuestros Objetivos</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-                <div class="h-full bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+                <div class="h-full p-8 rounded-lg border border-guia-gold/30 hover:border-guia-gold/60 hover:shadow-lg hover:shadow-guia-gold/10 transition-all">
                     <i class="fa-solid fa-gears text-5xl text-guia-gold mb-4"></i>
-                    <h3 class="text-xl font-semibold text-guia-green">Eficiencia Operativa</h3>
+                    <h3 class="text-xl font-semibold text-white">Eficiencia Operativa</h3>
                 </div>
 
-                <div class="h-full bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+                <div class="h-full p-8 rounded-lg border border-guia-gold/30 hover:border-guia-gold/60 hover:shadow-lg hover:shadow-guia-gold/10 transition-all">
                     <i class="fa-solid fa-award text-5xl text-guia-gold mb-4"></i>
-                    <h3 class="text-xl font-semibold text-guia-green">Compromiso con la Calidad</h3>
+                    <h3 class="text-xl font-semibold text-white">Compromiso con la Calidad</h3>
                 </div>
 
-                <div class="h-full bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+                <div class="h-full p-8 rounded-lg border border-guia-gold/30 hover:border-guia-gold/60 hover:shadow-lg hover:shadow-guia-gold/10 transition-all">
                     <i class="fa-solid fa-handshake text-5xl text-guia-gold mb-4"></i>
-                    <h3 class="text-xl font-semibold text-guia-green">Relaciones Confiables</h3>
+                    <h3 class="text-xl font-semibold text-white">Relaciones Confiables</h3>
                 </div>
 
-                <div class="h-full bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+                <div class="h-full p-8 rounded-lg border border-guia-gold/30 hover:border-guia-gold/60 hover:shadow-lg hover:shadow-guia-gold/10 transition-all">
                     <i class="fa-solid fa-truck-fast text-5xl text-guia-gold mb-4"></i>
-                    <h3 class="text-xl font-semibold text-guia-green">Logística de Precisión</h3>
+                    <h3 class="text-xl font-semibold text-white">Logística de Precisión</h3>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <section id="contacto" class="py-20 bg-white">
+    <section id="contacto" class="py-20">
         <div class="container mx-auto px-6 max-w-3xl">
-            <h2 class="text-3xl font-bold text-center mb-12 text-guia-green">Ponte en Contacto</h2>
-            <form class="bg-guia-light p-8 rounded-lg shadow-xl grid grid-cols-1 md:grid-cols-2 gap-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-guia-gold">Ponte en Contacto</h2>
+            
+            <form class="bg-white text-guia-text p-8 rounded-lg shadow-xl grid grid-cols-1 md:grid-cols-2 gap-6">
                 <input type="text" placeholder="Nombre" class="p-3 rounded-lg border border-gray-300 focus:border-guia-gold focus:ring-1 focus:ring-guia-gold outline-none transition" required>
                 <input type="email" placeholder="Correo Electrónico" class="p-3 rounded-lg border border-gray-300 focus:border-guia-gold focus:ring-1 focus:ring-guia-gold outline-none transition" required>
                 <input type="text" placeholder="Asunto" class="md:col-span-2 p-3 rounded-lg border border-gray-300 focus:border-guia-gold focus:ring-1 focus:ring-guia-gold outline-none transition" required>
@@ -210,9 +210,9 @@
         </div>
     </section>
 
-    <footer class="bg-guia-green text-white py-10">
+    <footer class="bg-guia-green text-white py-10 border-t border-guia-gold/20">
         <div class="container mx-auto px-6 text-center">
-            <img src="WhatsApp Image 2025-11-03 at 4.40.04 PM.jpeg" alt="GUIA LOGISTICS Logo" class="h-14 mx-auto mb-4">
+            <img src="guia verde.png" alt="GUIA LOGISTICS Logo" class="h-14 mx-auto mb-4">
             
             <p class="mb-4 text-guia-gold font-medium">Soluciones Integrales de Logística</p>
             <div class="flex justify-center space-x-6 mb-4 text-xl">
@@ -228,12 +228,10 @@
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
 
-        // Toggle menú móvil
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Cierra el menú al hacer clic en un enlace
         document.querySelectorAll('#mobile-menu a').forEach(link => {
             link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
         });
