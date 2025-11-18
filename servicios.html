@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - GUIA LOGISTICS</title>
+    <meta name="description" content="Soluciones integrales en transporte terrestre, flete marítimo, aéreo, agencia aduanal y logística personalizada.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'guia-green': '#0b1f15', 
+                        'guia-gold': '#c4a45a',   
+                        'guia-light': '#f7f5f2', 
+                        'guia-text': '#2a2a2a',
+                        'guia-dark': '#081a11'
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
+        
+        .service-card {
+            background: linear-gradient(145deg, #0b1f15 0%, #081a11 100%);
+            border: 1px solid rgba(196, 164, 90, 0.15);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(196, 164, 90, 0.4);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .gradient-overlay {
+            background: linear-gradient(135deg, rgba(11, 31, 21, 0.95) 0%, rgba(8, 26, 17, 0.98) 100%);
+        }
+        
+        .gold-gradient {
+            background: linear-gradient(135deg, #c4a45a 0%, #d4b46a 100%);
+        }
+        
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, #c4a45a 50%, transparent 100%);
+        }
+    </style>
+</head>
+<body class="bg-guia-green text-guia-light font-sans">
+
+    <!-- Navigation -->
+    <nav class="bg-guia-green/95 backdrop-blur-sm shadow-xl sticky top-0 z-50 border-b border-guia-gold/20">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            
+            <a href="index.html" class="flex items-center space-x-3">
+                <img src="guia verde.png" alt="GUIA LOGISTICS Logo" class="h-12">
+                <span class="text-xl font-semibold text-white hidden md:block">GUIA LOGISTICS</span>
+            </a>
+
+            <div class="hidden lg:flex space-x-8 text-[16px] text-guia-light items-center">
+                <a href="index.html#inicio" class="hover:text-guia-gold transition-all duration-300 font-medium">Inicio</a>
+                <a href="servicios.html" class="text-guia-gold border-b-2 border-guia-gold pb-1 font-semibold">Servicios</a>
+                <a href="about.html" class="hover:text-guia-gold transition-all duration-300 font-medium">Nosotros</a>
+                <a href="index.html#galeria" class="hover:text-guia-gold transition-all duration-300 font-medium">Galería</a>
+                <a href="index.html#contacto" class="gold-gradient text-white px-6 py-2.5 rounded-full hover:shadow-lg transition-all duration-300 font-medium shadow-md hover:scale-105">
+                    Contacto
+                </a>
+            </div>
+
+            <button id="mobile-menu-btn" class="lg:hidden p-2 text-guia-light hover:text-guia-gold transition-colors">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-guia-green border-t border-guia-gold/20 px-6 pb-6 space-y-3">
+            <a href="index.html#inicio" class="block py-3 text-guia-light hover:text-guia-gold border-b border-guia-gold/10">Inicio</a>
+            <a href="servicios.html" class="block py-3 text-guia-gold font-semibold border-b border-guia-gold/10">Servicios</a>
+            <a href="about.html" class="block py-3 text-guia-light hover:text-guia-gold border-b border-guia-gold/10">Nosotros</a>
+            <a href="index.html#galeria" class="block py-3 text-guia-light hover:text-guia-gold border-b border-guia-gold/10">Galería</a>
+            <a href="index.html#contacto" class="block gold-gradient text-white px-4 py-3 rounded-full text-center font-medium mt-4">
+                Contacto
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1561715276-a2d087060f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                 alt="Operaciones logísticas profesionales" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 gradient-overlay"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight" data-aos="fade-up">
+                    <span class="text-white">Servicios</span> 
+                    <span class="text-guia-gold block mt-2">Logísticos</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-guia-light mb-8 max-w-2xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+                    Soluciones integrales diseñadas para optimizar su cadena de suministro global
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="200">
+                    <a href="#servicios" class="gold-gradient text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transition-all duration-300 shadow-lg hover:scale-105">
+                        Explorar Servicios
+                    </a>
+                    <a href="index.html#contacto" class="border-2 border-guia-gold text-guia-gold px-8 py-4 rounded-full text-lg font-semibold hover:bg-guia-gold hover:text-white transition-all duration-300">
+                        Consultoría Gratuita
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-guia-green to-transparent"></div>
+    </section>
+
+    <!-- Services Overview -->
+    <section id="servicios" class="py-24 bg-guia-dark">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-20" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">Nuestro Portafolio de Servicios</h2>
+                <div class="section-divider w-32 mx-auto my-6"></div>
+                <p class="text-xl text-guia-light leading-relaxed">
+                    Ofrecemos soluciones logísticas completas respaldadas por tecnología avanzada, 
+                    experiencia sectorial y un compromiso inquebrantable con la excelencia operativa.
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+                
+                <!-- Transporte Terrestre -->
+                <div class="service-card rounded-2xl p-8 group" data-aos="fade-up">
+                    <div class="flex items-start mb-6">
+                        <div class="gold-gradient p-4 rounded-2xl mr-5 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa-solid fa-truck-fast text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mt-2">Transporte Terrestre</h3>
+                    </div>
+                    <p class="text-guia-light mb-6 leading-relaxed">
+                        Soluciones de transporte terrestre nacional e internacional con flota moderna, 
+                        seguimiento GPS en tiempo real y cumplimiento garantizado de tiempos de entrega.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-guia-light">
+                            <i class="fa-solid fa-check text-guia-gold mr-3"></i>
+                            Flota diversificada para todo tipo de carga
+                        </li>
+                        <li class="flex items-center text-guia-light">
+                            <i class="fa-solid fa-check text-guia-gold mr-3"></i>
+                            Monitoreo 24/7 con tecnología GPS
+                        </li>
+                        <li class="flex items-center text-guia-light">
+                            <i class="fa-solid fa-check text-guia-gold mr-3"></i>
+                            Cobertura nacional e internacional
+                        </li>
+                    </ul>
+                    <a href="#contacto" class="inline-flex items-center text-guia-gold font-semibold hover:text-white group-hover:translate-x-2 transition-transform duration-300">
+                        Solicitar cotización
+                        <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Flete Marítimo -->
+                <div class="service-card rounded-2xl p-8 group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-start mb-6">
+                        <div class="gold-gradient p-4 rounded-2xl mr-5 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa-solid fa-ship text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mt-2">Flete Marítimo</h3>
+                    </div>
+                    <p class="text-guia-light mb-6 leading-relaxed">
+                        Servicios FCL y LCL con alianzas estratégicas con navieras líderes, 
+                        gestión portuaria integral y documentación internacional especializada.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-guia-light">
+                            <i class="fa-solid fa-check text-guia-gold mr-3"></i>
+                            Contenedores especializados y refrigerados
+                        </li>
+                        <li class="flex items-center text-guia-light">
+                            <i class="fa-solid fa-check text-guia-gold mr-3"></i>
+                            Coordinación portuaria integral
+                        </li>
+                        <li class="flex items-center text-guia-light">
+                            <i class="fa-solid fa-check text-guia-gold mr-3"></i>
+                            Alianzas con navieras globales
+                        </li>
+                    </ul>
+                    <a href="#contacto" class="inline-flex items-center text-guia-gold font-semibold hover:text-white group-hover:translate-x-2 transition-transform duration-300">
+                        Solicitar cotización
+                        <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Flete Aéreo -->
+                <div class="service-card rounded-2xl p-8 group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-start mb-6">
+                        <div class="gold-gradient p-4 rounded-2xl mr-5 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa-solid fa-plane-departure text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mt-2">Flete Aéreo</h3>
+                    </div>
+                    <p class="text-guia-light mb-6 leading-relaxed">
+                        Soluciones aéreas express y carga consolidada con trazabilidad completa, 
+                        manejo de carga especializada y coordinación con aerolíneas líderes.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-guia-light">
+                            <i class="fa-solid fa-check text-guia-gold mr-3"></i>
+                            Envíos express y carga consolidada
+                        </li>
+                        <li class="flex items-center text-guia-light">
+                            <i class="fa-solid fa-check text-guia-gold mr-3"></i>
+                            Carga peligrosa y especializada
+                        </li>
+                        <li class="flex items-center text-guia-light">
+                            <i class="fa-solid fa-check text-guia-gold mr-3"></i>
+                            Seguimiento en tiempo real
+                        </li>
+                    </ul>
+                    <a href="#contacto" class="inline-flex items-center text-guia-gold font-semibold hover:text-white group-hover:translate-x-2 transition-transform duration-300">
+                        Solicitar cotización
+                        <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Agencia Aduanal -->
+                <div class="service-card rounded-2xl p-8 group" data-aos="fade-up">
+                    <div class="flex items-start mb-6">
+                        <div class="gold-gradient p-4 rounded-2xl mr-5 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa-solid fa-file-contract text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mt-2">Agencia Aduanal</h3>
+                    </div>
+                    <p class="text-guia-light mb-6 leading-relaxed">
+                        Despacho aduanal especializado en importación y exportación con 
+                        clasificación arancelaria precisa y cumplimiento regulatorio garantizado.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-guia-light">
+                            <i class="fa-solid fa-check text-guia-gold mr-3"></i>
+                            Despacho de importación/exportación
+                        </li>
+                        <li class="flex items-center text-guia-light">
+                            <i class="fa-solid fa-check text-guia-gold mr-3"></i>
+                            Clasificación arancelaria
+                        </li>
+                        <li class="flex items-center text-guia-light">
+                            <i class="fa-solid fa-check text-guia-gold mr-3"></i>
+                            Gestión de permisos y certificaciones
+                        </li>
+                    </ul>
+                    <a href="#contacto" class="inline-flex items-center text-guia-gold font-semibold hover:text-white group-hover:translate-x-2 transition-transform duration-300">
+                        Solicitar cotización
+                        <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Almacén y Logística -->
+                <div class="service-card rounded-2xl p-8 group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-start mb-6">
+                        <div class="gold-gradient p-4 rounded-2xl mr-5 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa-solid fa-warehouse text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mt-2">Almacén y Logística</h3>
+                    </div>
+                    <p class="text-guia-light mb-6 leading-relaxed">
+                        Almacenamiento seguro con gestión de inventarios avanzada, 
+                        cross-docking eficiente y servicios de valor agregado.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-guia-light">
+                            <i class="fa-solid fa-check text-guia-gold mr-3"></i>
+                            Almacenamiento seguro y climatizado
+                        </li>
+                        <li class="flex items-center text-guia-light">
+                            <i class="fa-solid fa-check text-guia-gold mr-3"></i>
+                            Cross-docking y distribución
+                        </li>
+                        <li class="flex items-center text-guia-light">
+                            <i class="fa-solid fa-check text-guia-gold mr-3"></i>
+                            Picking, packing y etiquetado
+                        </li>
+                    </ul>
+                    <a href="#contacto" class="inline-flex items-center text-guia-gold font-semibold hover:text-white group-hover:translate-x-2 transition-transform duration-300">
+                        Solicitar cotización
+                        <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Soluciones Integradas -->
+                <div class="service-card rounded-2xl p-8 group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-start mb-6">
+                        <div class="gold-gradient p-4 rounded-2xl mr-5 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa-solid fa-puzzle-piece text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mt-2">Soluciones Integradas</h3>
+                    </div>
+                    <p class="text-guia-light mb-6 leading-relaxed">
+                        Servicios de custodia especializada, seguros de carga y sellos de seguridad 
+                        para protección completa de su cadena de suministro.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-guia-light">
+                            <i class="fa-solid fa-check text-guia-gold mr-3"></i>
+                            Custodia de alta seguridad
+                        </li>
+                        <li class="flex items-center text-guia-light">
+                            <i class="fa-solid fa-check text-guia-gold mr-3"></i>
+                            Seguros de carga integrales
+                        </li>
+                        <li class="flex items-center text-guia-light">
+                            <i class="fa-solid fa-check text-guia-gold mr-3"></i>
+                            Sellos de seguridad trazables
+                        </li>
+                    </ul>
+                    <a href="#contacto" class="inline-flex items-center text-guia-gold font-semibold hover:text-white group-hover:translate-x-2 transition-transform duration-300">
+                        Solicitar cotización
+                        <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="py-24 bg-guia-green">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-4xl font-bold mb-6 text-white">Tecnología de Vanguardia</h2>
+                    <div class="section-divider w-24 my-6"></div>
+                    <p class="text-xl text-guia-light mb-8 leading-relaxed">
+                        Implementamos soluciones tecnológicas avanzadas para ofrecer 
+                        visibilidad total, eficiencia operativa y toma de decisiones informada.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="gold-gradient p-3 rounded-lg mr-4 mt-1">
+                                <i class="fa-solid fa-satellite-dish text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-white mb-2">Monitoreo en Tiempo Real</h4>
+                                <p class="text-guia-light">Seguimiento GPS y sensores IoT para visibilidad completa de su carga.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="gold-gradient p-3 rounded-lg mr-4 mt-1">
+                                <i class="fa-solid fa-chart-line text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-white mb-2">Analítica Predictiva</h4>
+                                <p class="text-guia-light">Análisis de datos para optimizar rutas y prevenir incidencias.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="gold-gradient p-3 rounded-lg mr-4 mt-1">
+                                <i class="fa-solid fa-mobile-screen text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-white mb-2">Plataforma Digital</h4>
+                                <p class="text-guia-light">Acceso 24/7 a reportes, documentación y estado de operaciones.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left" class="relative">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                         alt="Tecnología logística avanzada" 
+                         class="rounded-2xl shadow-2xl">
+                    <div class="absolute -bottom-6 -left-6 w-24 h-24 gold-gradient rounded-2xl flex items-center justify-center">
+                        <i class="fa-solid fa-brain text-3xl text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contacto" class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                 alt="Consultoría logística" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-guia-green/95"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white" data-aos="fade-up">
+                    ¿Listo para Optimizar su Cadena de Suministro?
+                </h2>
+                <p class="text-xl text-guia-light mb-12 max-w-2xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+                    Nuestros especialistas están preparados para analizar sus necesidades 
+                    y diseñar la solución logística perfecta para su negocio.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center items-center" data-aos="fade-up" data-aos-delay="200">
+                    <a href="tel:+525512345678" class="gold-gradient text-white px-10 py-5 rounded-full text-lg font-semibold hover:shadow-2xl transition-all duration-300 shadow-lg hover:scale-105 flex items-center">
+                        <i class="fa-solid fa-phone mr-3"></i>
+                        Llamar Ahora
+                    </a>
+                    <a href="mailto:contacto@guiacommerce.com" class="border-2 border-guia-gold text-guia-gold px-10 py-5 rounded-full text-lg font-semibold hover:bg-guia-gold hover:text-white transition-all duration-300 flex items-center">
+                        <i class="fa-solid fa-envelope mr-3"></i>
+                        Email Directo
+                    </a>
+                </div>
+                <p class="text-guia-light mt-8" data-aos="fade-up" data-aos-delay="300">
+                    Respuesta garantizada en menos de 24 horas
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-guia-dark text-white py-16 border-t border-guia-gold/20">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="lg:col-span-2">
+                    <img src="guia verde.png" alt="GUIA LOGISTICS Logo" class="h-16 mb-6">
+                    <p class="text-guia-light mb-6 max-w-md leading-relaxed">
+                        Líderes en soluciones logísticas integrales con más de una década de experiencia 
+                        transformando cadenas de suministro en ventajas competitivas.
+                    </p>
+                    <div class="flex space-x-4 text-xl">
+                        <a href="#" class="text-guia-light hover:text-guia-gold transition-colors duration-300">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-guia-light hover:text-guia-gold transition-colors duration-300">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-guia-light hover:text-guia-gold transition-colors duration-300">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6 text-white">Enlaces Rápidos</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-guia-light hover:text-guia-gold transition-colors">Inicio</a></li>
+                        <li><a href="servicios.html" class="text-guia-gold font-medium">Servicios</a></li>
+                        <li><a href="about.html" class="text-guia-light hover:text-guia-gold transition-colors">Nosotros</a></li>
+                        <li><a href="index.html#galeria" class="text-guia-light hover:text-guia-gold transition-colors">Galería</a></li>
+                        <li><a href="index.html#contacto" class="text-guia-light hover:text-guia-gold transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6 text-white">Contacto</h4>
+                    <ul class="space-y-3 text-guia-light">
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-location-dot text-guia-gold mr-3"></i>
+                            Ciudad de México, México
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-phone text-guia-gold mr-3"></i>
+                            +52 55 1234 5678
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-envelope text-guia-gold mr-3"></i>
+                            contacto@guiacommerce.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-guia-gold/20 mt-12 pt-8 text-center">
+                <p class="text-sm text-gray-400">
+                    &copy; 2025 GUIA LOGISTICS. Todos los derechos reservados. | 
+                    <a href="#" class="hover:text-guia-gold transition-colors">Política de Privacidad</a> | 
+                    <a href="#" class="hover:text-guia-gold transition-colors">Términos de Servicio</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on links
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
+
+</body>
+</html>
